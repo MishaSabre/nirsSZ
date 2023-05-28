@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <TabPane fx:id="tabPane" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1200.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab fx:id="strategyPane" text="Выбор оптимальной стратегии">
+               <content>
+                  <AnchorPane fx:id="strategyAnchor" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <GridPane gridLinesVisible="true" layoutX="14.0" layoutY="61.0" prefHeight="470.0" prefWidth="247.0" style="-fx-background-color: WHITE;">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="59.0" minWidth="10.0" prefWidth="28.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="143.0" minWidth="10.0" prefWidth="133.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="88.0" minWidth="10.0" prefWidth="57.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <TextField editable="false" text="№" />
+                              <TextField editable="false" text="Наименование" GridPane.columnIndex="1" />
+                              <TextField editable="false" prefHeight="28.0" prefWidth="52.0" text="Выбор" GridPane.columnIndex="2" />
+                              <TextField editable="false" text="1" GridPane.rowIndex="1" />
+                              <TextField editable="false" text="2" GridPane.rowIndex="2" />
+                              <TextField editable="false" text="3" GridPane.rowIndex="3" />
+                              <TextField GridPane.rowIndex="4" />
+                              <TextField editable="false" text="4" GridPane.rowIndex="4" />
+                              <TextField editable="false" text="6" GridPane.rowIndex="6" />
+                              <TextField editable="false" text="7" GridPane.rowIndex="7" />
+                              <TextField editable="false" text="8" GridPane.rowIndex="8" />
+                              <TextField editable="false" text="9" GridPane.rowIndex="9" />
+                              <TextField editable="false" text="10" GridPane.rowIndex="10" />
+                              <TextField editable="false" text="11" GridPane.rowIndex="11" />
+                              <TextField editable="false" text="12" GridPane.rowIndex="12" />
+                              <TextField editable="false" text="13" GridPane.rowIndex="13" />
+                              <TextField editable="false" text="14" GridPane.rowIndex="14" />
+                              <TextField editable="false" text="Атака1" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <TextField editable="false" text="Атака2" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <TextField editable="false" text="Атака3" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                              <TextField editable="false" text="Атака4" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                              <TextField editable="false" text="Атака6" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                              <TextField editable="false" text="Атака7" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                              <TextField editable="false" text="Атака8" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                              <TextField editable="false" text="Атака9" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                              <TextField editable="false" text="Атака10" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                              <TextField editable="false" text="Атака11" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                              <TextField editable="false" text="Атака12" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+                              <TextField editable="false" text="Атака13" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+                              <TextField editable="false" text="Атака14" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+                              <CheckBox fx:id="atackCheck1" mnemonicParsing="false" selected="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                              <CheckBox fx:id="atackCheck2" mnemonicParsing="false" selected="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                              <CheckBox fx:id="atackCheck3" mnemonicParsing="false" selected="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                              <CheckBox fx:id="atackCheck4" mnemonicParsing="false" selected="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                              <CheckBox fx:id="atackCheck5" mnemonicParsing="false" selected="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+                              <CheckBox fx:id="atackCheck6" mnemonicParsing="false" selected="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+                              <CheckBox fx:id="atackCheck7" mnemonicParsing="false" selected="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
+                              <CheckBox fx:id="atackCheck8" mnemonicParsing="false" selected="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="8" GridPane.valignment="CENTER" />
+                              <CheckBox fx:id="atackCheck9" mnemonicParsing="false" selected="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="9" GridPane.valignment="CENTER" />
+                              <CheckBox fx:id="atackCheck10" mnemonicParsing="false" selected="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="10" GridPane.valignment="CENTER" />
+                              <CheckBox fx:id="atackCheck11" mnemonicParsing="false" selected="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="11" GridPane.valignment="CENTER" />
+                              <CheckBox fx:id="atackCheck12" mnemonicParsing="false" selected="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="12" GridPane.valignment="CENTER" />
+                              <CheckBox fx:id="atackCheck13" mnemonicParsing="false" selected="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="13" GridPane.valignment="CENTER" />
+                              <CheckBox fx:id="atackCheck14" mnemonicParsing="false" selected="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="14" GridPane.valignment="CENTER" />
+                              <TextField editable="false" text="5" GridPane.rowIndex="5" />
+                              <TextField editable="false" text="Атака5" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                           </children>
+                        </GridPane>
+                        <ScrollPane fx:id="scrollWindow" layoutX="279.0" layoutY="61.0" pannable="true" prefHeight="500.0" prefViewportHeight="200.0" prefViewportWidth="300.0" prefWidth="650.0">
+                           <content>
+                              <AnchorPane fx:id="matrixPane" minHeight="0.0" minWidth="0.0" prefHeight="500.0" prefWidth="650.0">
+                                 <children>
+                                    <GridPane fx:id="strategyGridPane" gridLinesVisible="true">
+                                      <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                    </GridPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </ScrollPane>
+                        <GridPane gridLinesVisible="true" layoutX="928.0" layoutY="61.0" prefHeight="159.0" prefWidth="238.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="50.0" minWidth="10.0" prefWidth="42.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="136.0" minWidth="10.0" prefWidth="136.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="81.0" minWidth="10.0" prefWidth="38.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <TextField editable="false" text="№" />
+                              <TextField editable="false" text="Наименование" GridPane.columnIndex="1" />
+                              <TextField editable="false" text="1" GridPane.rowIndex="1" />
+                              <TextField editable="false" text="Средство защиты1" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <TextField editable="false" text="2" GridPane.rowIndex="2" />
+                              <TextField editable="false" text="Средство защиты2" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <TextField editable="false" text="3" GridPane.rowIndex="3" />
+                              <TextField editable="false" text="Средство защиты3" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                              <TextField editable="false" text="4" GridPane.rowIndex="4" />
+                              <TextField editable="false" text="Средство защиты4" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                              <TextField editable="false" text="5" GridPane.rowIndex="5" />
+                              <TextField editable="false" style="-fx-background-color: WHITE;" text="Средство защиты5" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                              <CheckBox fx:id="protectCheck1" mnemonicParsing="false" selected="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                              <CheckBox fx:id="protectCheck2" mnemonicParsing="false" selected="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                              <CheckBox fx:id="protectCheck3" mnemonicParsing="false" selected="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                              <CheckBox fx:id="protectCheck4" mnemonicParsing="false" selected="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                              <CheckBox fx:id="protectCheck5" mnemonicParsing="false" selected="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+                              <TextField editable="false" prefHeight="25.0" prefWidth="64.0" text="Выбор" GridPane.columnIndex="2" />
+                           </children>
+                        </GridPane>
+                        <Button fx:id="buttonSchetOnClick" layoutX="278.0" layoutY="670.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="644.0" text="Выбор оптимальной стратегии" />
+                        <Button fx:id="buttonGenerateOnClick" layoutX="941.0" layoutY="255.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="212.0" text="Заполнить игровую матрицу" />
+                        <RadioButton fx:id="critVald" layoutX="279.0" layoutY="566.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="641.0" text="Критерий крайнего пессемизма Вальда" />
+                        <RadioButton fx:id="critBayes" layoutX="279.0" layoutY="589.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="641.0" text="Критерий Байеса" />
+                        <RadioButton fx:id="critLaplas" layoutX="279.0" layoutY="612.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="641.0" text="Критерий недостаточного основания Лапласа" />
+                        <RadioButton fx:id="critGurvic" layoutX="280.0" layoutY="635.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="641.0" text="Критерий пессемизма-опитимизма Гурвица" />
+                        <TextField fx:id="paramC" layoutX="194.0" layoutY="631.0" prefHeight="16.0" prefWidth="67.0" text="0.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Рассчет возможного ущерба">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+               </content>
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <GridPane gridLinesVisible="true" layoutX="14.0" layoutY="61.0" prefHeight="470.0" prefWidth="247.0" style="-fx-background-color: WHITE;">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="59.0" minWidth="10.0" prefWidth="28.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="143.0" minWidth="10.0" prefWidth="133.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="88.0" minWidth="10.0" prefWidth="57.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <TextField editable="false" text="№" />
+                              <TextField editable="false" text="Наименование" GridPane.columnIndex="1" />
+                              <TextField editable="false" prefHeight="28.0" prefWidth="52.0" text="Выбор" GridPane.columnIndex="2" />
+                              <TextField editable="false" text="1" GridPane.rowIndex="1" />
+                              <TextField editable="false" text="2" GridPane.rowIndex="2" />
+                              <TextField editable="false" text="3" GridPane.rowIndex="3" />
+                              <TextField GridPane.rowIndex="4" />
+                              <TextField editable="false" text="4" GridPane.rowIndex="4" />
+                              <TextField editable="false" text="6" GridPane.rowIndex="6" />
+                              <TextField editable="false" text="7" GridPane.rowIndex="7" />
+                              <TextField editable="false" text="8" GridPane.rowIndex="8" />
+                              <TextField editable="false" text="9" GridPane.rowIndex="9" />
+                              <TextField editable="false" text="10" GridPane.rowIndex="10" />
+                              <TextField editable="false" text="11" GridPane.rowIndex="11" />
+                              <TextField editable="false" text="12" GridPane.rowIndex="12" />
+                              <TextField editable="false" text="13" GridPane.rowIndex="13" />
+                              <TextField editable="false" text="14" GridPane.rowIndex="14" />
+                              <TextField editable="false" text="Атака1" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <TextField editable="false" text="Атака2" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <TextField editable="false" text="Атака3" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                              <TextField editable="false" text="Атака4" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                              <TextField editable="false" text="Атака6" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                              <TextField editable="false" text="Атака7" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                              <TextField editable="false" text="Атака8" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                              <TextField editable="false" text="Атака9" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                              <TextField editable="false" text="Атака10" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                              <TextField editable="false" text="Атака11" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                              <TextField editable="false" text="Атака12" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+                              <TextField editable="false" text="Атака13" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+                              <TextField editable="false" text="Атака14" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+                              <CheckBox fx:id="checkerAtack1" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                              <CheckBox fx:id="checkerAtack2" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                              <CheckBox fx:id="checkerAtack3" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                              <CheckBox fx:id="checkerAtack4" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                              <CheckBox fx:id="checkerAtack5" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+                              <CheckBox fx:id="checkerAtack6" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+                              <CheckBox fx:id="checkerAtack7" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
+                              <CheckBox fx:id="checkerAtack8" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="8" GridPane.valignment="CENTER" />
+                              <CheckBox fx:id="checkerAtack9" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="9" GridPane.valignment="CENTER" />
+                              <CheckBox fx:id="checkerAtack10" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="10" GridPane.valignment="CENTER" />
+                              <CheckBox fx:id="checkerAtack11" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="11" GridPane.valignment="CENTER" />
+                              <CheckBox fx:id="checkerAtack12" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="12" GridPane.valignment="CENTER" />
+                              <CheckBox fx:id="checkerAtack13" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="13" GridPane.valignment="CENTER" />
+                              <CheckBox fx:id="checkerAtack14" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="14" GridPane.valignment="CENTER" />
+                              <TextField editable="false" text="5" GridPane.rowIndex="5" />
+                              <TextField editable="false" text="Атака5" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                           </children>
+                        </GridPane>
+                        <GridPane gridLinesVisible="true" layoutX="928.0" layoutY="61.0" prefHeight="159.0" prefWidth="238.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="50.0" minWidth="10.0" prefWidth="42.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="136.0" minWidth="10.0" prefWidth="136.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="81.0" minWidth="10.0" prefWidth="38.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <TextField editable="false" text="№" />
+                              <TextField editable="false" text="Наименование" GridPane.columnIndex="1" />
+                              <TextField editable="false" text="1" GridPane.rowIndex="1" />
+                              <TextField editable="false" text="Средство защиты1" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <TextField editable="false" text="2" GridPane.rowIndex="2" />
+                              <TextField editable="false" text="Средство защиты2" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <TextField editable="false" text="3" GridPane.rowIndex="3" />
+                              <TextField editable="false" text="Средство защиты3" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                              <TextField editable="false" text="4" GridPane.rowIndex="4" />
+                              <TextField editable="false" text="Средство защиты4" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                              <TextField editable="false" text="5" GridPane.rowIndex="5" />
+                              <TextField editable="false" style="-fx-background-color: WHITE;" text="Средство защиты5" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                              <CheckBox fx:id="checkerProtect1" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                              <CheckBox fx:id="checkerProtect2" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                              <CheckBox fx:id="checkerProtect3" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                              <CheckBox fx:id="checkerProtect4" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                              <CheckBox fx:id="checkerProtect5" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+                              <TextField editable="false" prefHeight="25.0" prefWidth="64.0" text="Выбор" GridPane.columnIndex="2" />
+                           </children>
+                        </GridPane>
+                        <Button fx:id="buttonSumOnClick" layoutX="276.0" layoutY="776.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="644.0" text="Расчет возможного ущерба " />
+                        <ScrollPane fx:id="scrollForHackers" layoutX="299.0" layoutY="289.0" prefHeight="242.0" prefWidth="598.0">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="241.0" prefWidth="598.0">
+                                 <children>
+                                    <GridPane fx:id="gridForAtacks" gridLinesVisible="true">
+                                      <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                    </GridPane>
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </ScrollPane>
+                        <ScrollPane fx:id="scrollForAdmins" layoutX="299.0" layoutY="37.0" prefHeight="242.0" prefWidth="598.0">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="241.0" prefWidth="598.0">
+                                 <children>
+                                    <GridPane fx:id="gridForAdmins" gridLinesVisible="true">
+                                      <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                    </GridPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </ScrollPane>
+                        <TextArea fx:id="outputWindow" editable="false" layoutX="299.0" layoutY="544.0" prefHeight="200.0" prefWidth="600.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
