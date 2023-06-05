@@ -69,10 +69,8 @@ public class Matrix {
         int counter = 1;
         for(int i = 0; i < protectors.size(); i++){
             for(int j = i + 1; j < protectors.size(); j++ ){
-                if(buffAdmins.get(i) && buffAdmins.get(j)) {
-                    this.admins.add(new Admin(counter, new ArrayList<>(Arrays.asList(protectors.get(i), protectors.get(j)))));
-                    counter++;
-                }
+                this.admins.add(new Admin(counter, new ArrayList<>(Arrays.asList(protectors.get(i), protectors.get(j)))));
+                counter++;
             }
 
         }
@@ -80,13 +78,14 @@ public class Matrix {
         counter = 1;
         for(int i = 0; i < threats.size(); i++){
             for(int j = i + 1; j < threats.size(); j++ ){
-                if(buffHackers.get(i) && buffHackers.get(j)) {
-                    this.hackers.add(new Hacker(counter, new ArrayList<>(Arrays.asList(threats.get(i), threats.get(j)))));
-                    counter++;
-                }
+                this.hackers.add(new Hacker(counter, new ArrayList<>(Arrays.asList(threats.get(i), threats.get(j)))));
+                counter++;
             }
         }
-
+        System.out.println(threats.size());
+        System.out.println(protectors.size());
+        System.out.println(admins.size());
+        System.out.println(hackers.size());
         int j = 2;
         for(Admin admin : admins){
             int i = 1;
@@ -96,6 +95,8 @@ public class Matrix {
             }
             j++;
         }
+
+        for(Cell cell : this.cells) System.out.println("------------\n" + cell.getValue());
     }
 
 
