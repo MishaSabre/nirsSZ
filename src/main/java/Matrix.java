@@ -82,10 +82,7 @@ public class Matrix {
                 counter++;
             }
         }
-        System.out.println(threats.size());
-        System.out.println(protectors.size());
-        System.out.println(admins.size());
-        System.out.println(hackers.size());
+
         int j = 2;
         for(Admin admin : admins){
             int i = 1;
@@ -96,7 +93,7 @@ public class Matrix {
             j++;
         }
 
-        for(Cell cell : this.cells) System.out.println("------------\n" + cell.getValue());
+
     }
 
 
@@ -143,47 +140,51 @@ public class Matrix {
      *
      */
     public Admin critBayes(List<TextField> percentsStrings){
+        double sumOfHackPercents = 0;
 
         if(hackPercents.size() != 0) hackPercents.clear();
 
         for(TextField str : percentsStrings){
             hackPercents.add(Double.parseDouble(str.getText()));
+            sumOfHackPercents += Double.parseDouble(str.getText());
         }
 
-        Admin output = null;
-        int min = 999999999;
-        int indexJ = 0;
+        if(sumOfHackPercents == 1.0) {
+            Admin output = null;
+            int min = 999999999;
+            int indexJ = 0;
 
-        int[] sums = new int[admins.size()];
+            int[] sums = new int[admins.size()];
 
 
-        for(int j = 0; j < admins.size(); j++){
-            for(Cell cell : cells){
-                if(cell.getJ()-2 == j){
-                    sums[j] += cell.getValue() * hackPercents.get(cell.getI()-1);
+            for (int j = 0; j < admins.size(); j++) {
+                for (Cell cell : cells) {
+                    if (cell.getJ() - 2 == j) {
+                        sums[j] += cell.getValue() * hackPercents.get(cell.getI() - 1);
+
+                    }
                 }
             }
-        }
-        for (int i : sums)
-            System.out.println(i);
 
-        for(int i = 0; i < sums.length; i++){
-            if(sums[i] < min){
-                min = sums[i];
-                indexJ = i;
+            for (int i = 0; i < sums.length; i++) {
+                if (sums[i] < min && sums[i] != 0) {
+                    min = sums[i];
+                    indexJ = i;
+                }
             }
-        }
-        System.out.println(min);
-        System.out.println(indexJ);
 
-        for(Cell cell : cells){
-            if(cell.getJ()-2 == indexJ){
-                output = cell.getProtectors();
-                break;
+            for (Cell cell : cells) {
+                if (cell.getJ() - 2 == indexJ) {
+                    output = cell.getProtectors();
+                    break;
+                }
             }
+
+            return output;
+        }else {
+            return null;
         }
 
-        return output;
     }
 
     /**

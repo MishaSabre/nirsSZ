@@ -198,12 +198,6 @@ public class Controller {
     @FXML
     private TabPane tabPane;
 
-
-
-
-
-
-
     @FXML
     void initialize() {
         /*
@@ -519,6 +513,7 @@ public class Controller {
             strategyGridPane.getRowConstraints().clear();
             strategyGridPane.getChildren().clear();
             strategyGridPane.setGridLinesVisible(true);
+            textFields.clear();
 
             int i = countProtecrors;
             int j = countAtack;
@@ -639,6 +634,7 @@ public class Controller {
                         if (Double.parseDouble(str.getText()) > maxDouble){
                             maxDouble = Double.parseDouble(str.getText());
                             maxDoubleIndex = textFields.indexOf(str);
+                            System.out.println(textFields.indexOf(str));
                         }
                     }
                     cumulativeDamage += admin.getProtectors().get(0).getCost() + admin.getProtectors().get(1).getCost();
@@ -951,7 +947,7 @@ public class Controller {
             gridForAtacks.add(new Label("  Название"),1,0);
             gridForAtacks.add(new Label("  Возможный ущерб"),2,0);
 
-            /*
+
             Set<Protector> a = new HashSet<>(buffProtectors);
             Set<Threat> b = new HashSet<>(buffThreats);
 
@@ -961,7 +957,7 @@ public class Controller {
             buffProtectors.addAll(a);
             buffThreats.addAll(b);
 
-             */
+
 
             for (int i = 0; i < buffProtectors.size(); i++) {
                 gridForAdmins.getRowConstraints().add(new RowConstraints(50));
